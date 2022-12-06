@@ -1,0 +1,3 @@
+/target/
+src/main/resources/*.ks
+src/main/resources/*.password
