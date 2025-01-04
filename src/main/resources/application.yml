@@ -35,11 +35,11 @@ spring:
                     apply_to_ddl: false
 keycache:
     secret-key-key-store:
-        resource: file:src/main/resources/key-store.ks
-        password-resource: file:src/main/resources/key-store.password
+        resource: classpath:key-store.ks
+        password-resource: classpath:key-store.password
         key-store-type: JCEKS
         key-passwords:
-            sample-key-v1: file:src/main/resources/sample-key-v1.password
+            sample-key-v1: classpath:sample-key-v1.password
 crypto:
     key-dictionary:
         key-codes:
